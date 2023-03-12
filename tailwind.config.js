@@ -24,5 +24,7 @@ module.exports = {
     variants: {
       extend: {},
     },
-    plugins: [],
+    plugins: [
+      ["@babel/plugin-transform-react-jsx", { "throwIfNamespace": false }]
+    ],
   }
