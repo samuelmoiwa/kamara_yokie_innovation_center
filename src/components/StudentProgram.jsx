@@ -1,65 +1,121 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable react/jsx-no-undef */
 /* eslint-disable react/style-prop-object */
 import { React } from "react";
-import { FaCheck } from "react-icons/fa";
+import ProgramsCardList from "./StudentProgramCard";
+import kyic_3 from "../images/kyic_3.png";
 
 export default function StudentPrograms() {
-  const services = [
-    {
-      title: "Service 1",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. ",
-    },
-    {
-      title: "Service 2",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. ",
-    },
-    {
-      title: "Service 3",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. ",
-    },
-  ];
-
   return (
     <>
-      <div className="bg-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center py-16">
-            <h2 className="text-base font-semibold text-blue-600 uppercase tracking-wide">
-              What we do
-            </h2>
-            <p className="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
-              Our Services
-            </p>
-          </div>
-          <div className="max-w-3xl mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
-            {services.map((service) => (
-              <div
-                key={service.title}
-                className="bg-white overflow-hidden shadow rounded-lg"
-              >
-                <div className="px-4 py-5 sm:p-6">
-                  <div className="flex items-center">
-                    <div className="flex-shrink-0 bg-blue-500 rounded-md p-3">
-                      <FaCheck className="h-6 w-6 text-white" />
-                    </div>
-                    <div className="ml-5 w-0 flex-1">
-                      <dt className="text-lg font-medium leading-6 text-gray-900">
-                        {service.title}
-                      </dt>
-                      <dd className="mt-2 text-base text-gray-500">
-                        {service.description}
-                      </dd>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+      <div className="bg-gray-100 w-full">
+        <div
+          className="
+        w-full bg-cover bg-no-repeat h-96
+        align-middle justify-center
+        flex-col
+        flex items-center text-center"
+          style={{ backgroundImage: `url(${kyic_3})` }}
+        >
+          <h1 className="text-white text-5xl font-bold ">Student Programs</h1>
         </div>
       </div>
+
+      {/* <!--Container--> */}
+      <section class="bg-white border-b py-8">
+        <div class="container max-w-5xl mx-auto m-8">
+          <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+            Promoting STEM Education
+          </h2>
+          <div class="w-full mb-4">
+            <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+          </div>
+          <div class="flex flex-wrap">
+            <div class="w-10/12 sm:w-1/2 p-6 ">
+              <h3 class="text-2xl text-gray-800 font-bold leading-none mb-3">
+                Engaging with students for the advancement of STEM
+              </h3>
+              <p class="text-gray-600 mb-8">
+                The Kamara Yokie Innovation Center (KYIC) is a youth-led center
+                in Sierra Leone that is committed to promoting STEM education
+                and developing young entrepreneurs in Sierra Leone and across
+                Africa. The center is actively engaging with students to advance
+                STEM education through a variety of programs and initiatives.{" "}
+                <br />
+                <br />
+                One of the primary ways that KYIC is engaging with students is
+                through its STEM education program. This program is designed to
+                provide students with hands-on experience in science,
+                technology, engineering, and mathematics. Students are
+                introduced to the fundamentals of these subjects and are
+                encouraged to explore their interests and passions.
+                <br />
+                <br />
+                The STEM education program includes a range of activities,
+                including workshops, seminars, and mentorship sessions. These
+                activities are designed to provide students with the knowledge
+                and skills they need to excel in STEM subjects. The program also
+                includes practical activities, such as building robots and
+                conducting experiments, to help students apply what they have
+                learned.
+                <br />
+                <br />
+                KYIC is also engaging with students through its entrepreneurship
+                program. This program is designed to help students develop the
+                skills and knowledge they need to become successful
+                entrepreneurs. Students are introduced to the basics of
+                entrepreneurship and are encouraged to think creatively and
+                innovatively.
+                <br />
+                <br />
+              </p>
+            </div>
+            <div class="w-full sm:w-1/2 p-6 ">
+              <p class="text-gray-600 mb-8">
+                The entrepreneurship program includes workshops, seminars, and
+                mentorship sessions. These activities are designed to help
+                students develop their business ideas and turn them into viable
+                ventures. The program also provides students with practical
+                skills, such as marketing, financial management, and business
+                planning. <br />
+                <br />
+                In addition to its STEM education and entrepreneurship programs,
+                KYIC is also engaging with students through its outreach
+                initiatives. These initiatives are designed to promote STEM
+                education and entrepreneurship in local schools and communities.
+                KYIC is partnering with schools and community organizations to
+                provide access to its programs and resources. <br />
+                <br />
+                KYIC is also engaging with students through its online platform,
+                which provides access to a range of resources, including
+                educational videos, tutorials, and interactive activities. The
+                online platform is designed to be accessible to students across
+                Africa, providing them with the opportunity to learn and grow
+                regardless of their location. <br />
+                <br />
+                The Kamara Yokie Innovation Center (KYIC) is actively engaging
+                with students to advance STEM education in Sierra Leone and
+                across Africa. Through its STEM education and entrepreneurship
+                programs, outreach initiatives, and online platform, KYIC is
+                providing students with the knowledge, skills, and resources
+                they need to succeed in the 21st century. <br />
+                <br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white border-b py-8">
+        <div class="container max-w-5xl mx-auto m-8">
+          <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 mb-10">
+            Student Projects
+          </h2>
+          <ProgramsCardList />
+        </div>
+      </section>
+
+      
     </>
   );
 }
