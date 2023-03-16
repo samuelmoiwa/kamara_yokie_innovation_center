@@ -3,7 +3,9 @@
 /* eslint-disable react/style-prop-object */
 import { React } from "react";
 import ProgramsCardList from "./StudentProgramCard";
+import JoinStudentProgramForm from "./JoinOurStudentProgramForm";
 import kyic_3 from "../images/kyic_3.png";
+import join_our_student_program from "../images/join_our_program.svg";
 
 export default function StudentPrograms() {
   return (
@@ -106,8 +108,8 @@ export default function StudentPrograms() {
         </div>
       </section>
 
-      <section class="bg-white border-b py-8">
-        <div class="container max-w-5xl mx-auto m-8">
+      <section class="bg-white border-b py-6">
+        <div class="container max-w-7xl mx-auto m-8 p-6">
           <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 mb-10">
             Student Projects
           </h2>
@@ -115,7 +117,16 @@ export default function StudentPrograms() {
         </div>
       </section>
 
-      
+      <section class="bg-white border-b py-8 bg-cover bg-no-repeat"
+        style={{ backgroundImage: `url(${join_our_student_program})` }}
+      >
+        <div class="container max-w-5xl mx-auto m-8">
+          <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 mb-10">
+            Sign up for our student program
+          </h2>
+          <JoinStudentProgramForm />
+        </div>
+      </section>
     </>
   );
 }
