@@ -2,46 +2,57 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import gaming from "../images/gaming.jpg";
+import coding from "../images/coding.jpg";
+import ent_ship from "../images/ent_ship.jpg";
+import scratch from "../images/scratch_programming.png";
+import vex from "../images/vex.jpg";
 
 const cards = [
   {
     category: "Coding",
-    imageUrl: "https://source.unsplash.com/random/480x360/?5",
-    title: "Exercitationem nisi iure qui asperiores non possimus",
+    imageUrl: coding,
+    title: "coding",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, excepturi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, excepturi.",
+      `Our coding classes are designed to teach students the basics of coding and software
+      development. We believe that coding is a critical skill in the digital age.`,
     time: "12 min ago",
   },
   {
-    category: "Coding",
-    imageUrl: "https://source.unsplash.com/random/480x360/?5",
-    title: "Exercitationem nisi iure qui asperiores non possimus",
+    category: "Game Design and Development",
+    imageUrl: gaming,
+    title: `gaming`,
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, excepturi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, excepturi.",
+      `Our game design and development classes are designed to teach students the basics of
+      game design and development. using open source software like Scratch and Unity.`,
     time: "12 min ago",
   },
   {
-    category: "Coding",
-    imageUrl: "https://source.unsplash.com/random/480x360/?5",
-    title: "Exercitationem nisi iure qui asperiores non possimus",
+    category: "Entrepreneurship",
+    imageUrl: ent_ship,
+    title: "Entrepreneurship and mentoring",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, excepturi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, excepturi.",
+      `Our entrepreneurship programs are designed to provide students with the skills and knowledge
+      needed to start and run a successful business. it is a critical skill that is needed in today's economy.
+      `,
     time: "12 min ago",
   },
   {
-    category: "Coding",
-    imageUrl: "https://source.unsplash.com/random/480x360/?5",
-    title: "Exercitationem nisi iure qui asperiores non possimus",
+    category: "Scratch Programming",
+    imageUrl: scratch,
+    title: "Coding with Scratch",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, excepturi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, excepturi.",
+      `Our coding classes are designed to teach students the basics of coding and software
+      development. We believe that coding is a critical skill in the digital age.`,
     time: "12 min ago",
   },
   {
-    category: "Coding",
-    imageUrl: "https://source.unsplash.com/random/480x360/?5",
-    title: "Exercitationem nisi iure qui asperiores non possimus",
+    category: "VEX Robotics",
+    imageUrl: vex,
+    title: "VEX Robotics",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, excepturi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, excepturi.",
+      `Our robotics workshops are designed to teach students the fundamentals of robotics and
+      engineering. robotics is an exciting field that combines science, engineering, and mathematics.`,
     time: "12 min ago",
   },
 ];

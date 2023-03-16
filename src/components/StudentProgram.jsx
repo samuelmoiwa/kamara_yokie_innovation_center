@@ -111,7 +111,7 @@ export default function StudentPrograms() {
       <section class="bg-white border-b py-6">
         <div class="container max-w-7xl mx-auto m-8 p-6">
           <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 mb-10">
-            Student Projects
+            Student Programs
           </h2>
           <ProgramsCardList />
         </div>
