@@ -21,7 +21,7 @@ function NavBar() {
   };
 
   return (
-    <nav className="bg-white shadow-sm fixed w-full shadow" aria-label="Top">
+    <nav className="bg-white shadow-sm fixed w-full shadow z-10" aria-label="Top">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center ml-20">
