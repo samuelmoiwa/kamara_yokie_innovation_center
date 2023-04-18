@@ -26,8 +26,14 @@ function Team() {
               Meet Our Team
             </h2>
             <p className="mt-4 text-lg text-gray-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
-              consectetur!
+              Welcome to the "Meet Our Team" section of our webpage! Here, we would
+              like to introduce you to the individuals who make up our organization
+              and who are passionate about our mission. <br />< br />
+
+              Our team is comprised of experienced and dedicated individuals,
+              each bringing their unique set of skills and expertise to the table.
+              From our founders to our board members and senior staff, every member
+              of our team plays a crucial role in driving our organization forward.
             </p>
           </div>
           <div className="mt-16 grid gap-16 lg:grid-cols-3 lg:max-w-none">

@@ -1,4 +1,5 @@
 import kyic21 from "../gallery/kyic21.JPG"
+import abu_kamara from "../images/abu_kamara.jpg"
 
 const teamData = [
   {
@@ -22,11 +23,11 @@ const teamData = [
   },
   {
     id: 1,
-    name: 'Hawa Yokie',
+    name: 'Abu Kamara',
     education: 'Bachelor of Science in Economics',
-    role: 'CEO & Founder',
+    role: 'Co-Founder',
     imageUrl:
-      kyic21,
+      abu_kamara,
     skills: [],
     socialHandles: [
       {

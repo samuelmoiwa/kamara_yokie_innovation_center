@@ -8,8 +8,8 @@ const navigation = [
   { name: "Student Programs", href: "/studentPrograms", current: false },
   { name: "Gallery", href: "/gallery", current: false },
   { name: "Team", href: "/team", current: false },
-  { name: "About Us", href: "/about-us", current: false },
-  { name: "Contact Us", href: "/contact-us", current: false },
+  { name: "About Us", href: "/aboutUs", current: false },
+  { name: "Contact Us", href: "/contact", current: false },
   { name: "Donate", href: "/donate", current: false },
 ];
 
