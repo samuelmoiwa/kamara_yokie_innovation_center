@@ -9,7 +9,7 @@ import join_our_student_program from "../images/join_our_program.svg";
 
 export default function StudentPrograms() {
   return (
-    <>
+    <div className="sm:px-6">
       <div className="bg-gray-100 w-full">
         <div
           className="
@@ -37,7 +37,7 @@ export default function StudentPrograms() {
               <h3 class="text-2xl text-gray-800 font-bold leading-none mb-3">
                 Engaging with students for the advancement of STEM
               </h3>
-              <p class="text-gray-600 mb-8">
+              <p class="text-gray-600 mb-8 text-justify">
                 The Kamara Yokie Innovation Center (KYIC) is a youth-led center
                 in Sierra Leone that is committed to promoting STEM education
                 and developing young entrepreneurs in Sierra Leone and across
@@ -73,7 +73,7 @@ export default function StudentPrograms() {
               </p>
             </div>
             <div class="w-full sm:w-1/2 p-6 ">
-              <p class="text-gray-600 mb-8">
+              <p class="text-gray-600 mb-8 text-justify">
                 The entrepreneurship program includes workshops, seminars, and
                 mentorship sessions. These activities are designed to help
                 students develop their business ideas and turn them into viable
@@ -127,6 +127,6 @@ export default function StudentPrograms() {
           <JoinStudentProgramForm />
         </div>
       </section>
-    </>
+    </div>
   );
 }
