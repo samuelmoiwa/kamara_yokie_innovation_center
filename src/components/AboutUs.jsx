@@ -32,7 +32,7 @@ const AboutUs = () => {
           <h3 className="text-xl font-bold text-gray-900 mb-4">
               OUR STORY
             </h3>
-            <p className="text-gray-500 leading-relaxed">
+            <p className="text-gray-500 leading-relaxed text-justify">
             The Kamara Yokie Innovation Center (KYIC) is a first of its kind youth-owned and youth-led
             Innovation Center in Africa, which aims to create a safe multi-cultural space where innovators,
             creative minds, and problem solvers come together to create solutions to pressing challenges affecting
@@ -42,7 +42,7 @@ const AboutUs = () => {
             </p>
             <br />
 
-            <p className="text-gray-500 leading-relaxed">
+            <p className="text-gray-500 leading-relaxed text-justify">
               <h3 className="text-xl font-bold text-gray-900 mb-4">
                 MISSION
               </h3>
@@ -59,7 +59,7 @@ const AboutUs = () => {
             <h3 className="text-xl font-bold text-gray-900 mb-4">
             IMPACT STATEMENT
             </h3>
-            <p className="text-gray-500 leading-relaxed">
+            <p className="text-gray-500 leading-relaxed text-justify">
             Our center will foster collaboration and partnerships between educators, industry professionals,
             and community members, helping to bridge the gap between education and real-world applications. <br />
             Our competitions have provided an opportunity for students to develop their skills in problem-solving,
@@ -88,7 +88,7 @@ const AboutUs = () => {
 
           </div>
           <div>
-          <p className="text-gray-500 leading-relaxed">
+          <p className="text-gray-500 leading-relaxed text-justify">
               <h3 className="text-xl font-bold text-gray-900 mb-4">
                 ACHIEVEMENTS SO FAR
               </h3>
@@ -126,12 +126,6 @@ const AboutUs = () => {
 
           </div>
         </div>
-
-
-
-
-
-
       </div>
     </div>
 
