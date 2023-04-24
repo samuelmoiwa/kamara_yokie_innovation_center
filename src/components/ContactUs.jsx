@@ -1,92 +1,136 @@
-import React from 'react';
-// import { useForm } from 'react-hook-form';
-// import { HiOutlineMail } from 'react-icons/hi';
-// import { IoMdCall } from 'react-icons/io';
-// import { AiOutlineLocation } from 'react-icons/ai';
-// import 'tailwindcss/tailwind.css';
+import React from "react";
+import { useForm } from "react-hook-form";
+import { HiUserCircle, HiMail, HiOutlinePencilAlt } from "react-icons/hi";
+import { IoIosSend } from "react-icons/io";
+import { AiOutlineLoading } from "react-icons/ai";
+import kyic_3 from "../images/kyic_3.png";
 
 const ContactUs = () => {
 
-  // const { register, handleSubmit, errors } = useForm();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+    watch,
+  } = useForm();
 
-  // const onSubmit = (data) => {
-  //   console.log(data);
-  // };
+  const onSubmit = async (data) => {
+    console.log(data);
+    // Send form data to backend or API
+    // Show success message
+    reset();
+  };
 
-  return
-//   <div className="bg-gray-100 py-10">
-//   <div className="container mx-auto">
-//     <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
-//     <div className="flex flex-col md:flex-row">
-//       <div className="w-full md:w-1/2 md:pr-8 mb-8 md:mb-0">
-//         <form onSubmit={handleSubmit(onSubmit)}>
-//           <div className="mb-4">
-//             <label className="block text-gray-700 font-bold mb-2" htmlFor="name">
-//               Name
-//             </label>
-//             <input
-//               className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-//               id="name"
-//               name="name"
-//               type="text"
-//               placeholder="Enter your name"
-//               ref={register({ required: true })}
-//             />
-//             {errors.name && <span className="text-red-500 text-sm">This field is required</span>}
-//           </div>
-//           <div className="mb-4">
-//             <label className="block text-gray-700 font-bold mb-2" htmlFor="email">
-//               Email
-//             </label>
-//             <input
-//               className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-//               id="email"
-//               name="email"
-//               type="email"
-//               placeholder="Enter your email"
-//               ref={register({ required: true })}
-//             />
-//             {errors.email && <span className="text-red-500 text-sm">This field is required</span>}
-//           </div>
-//           <div className="mb-4">
-//             <label className="block text-gray-700 font-bold mb-2" htmlFor="message">
-//               Message
-//             </label>
-//             <textarea
-//               className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-//               id="message"
-//               name="message"
-//               placeholder="Enter your message"
-//               rows="5"
-//               ref={register({ required: true })}
-//             />
-//             {errors.message && <span className="text-red-500 text-sm">This field is required</span>}
-//           </div>
-//           <button
-//             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-//             type="submit"
-//           >
-//             Submit
-//           </button>
-//         </form>
-//       </div>
-//       <div className="w-full md:w-1/2">
-//         <div className="mb-4 flex items-center">
-//           <HiOutlineMail className="text-2xl mr-2" />
-//           <span>contact    @example.com</span>
-//         </div>
-//         <div className="mb-4 flex items-center">
-//           <IoMdCall className="text-2xl mr-2" />
-//           <span>+1 234 567 8901</span>
-//         </div>
-//         <div className="flex items-center">
-//           <AiOutlineLocation className="text-2xl mr-2" />
-//           <span>123 Main St, New York, NY 10001, USA</span>
-//         </div>
-//       </div>
-//     </div>
-//   </div>
-// </div>
+  const loading = watch("loading");
+
+  return (
+    <>
+    <div className="bg-gray-100 w-full">
+        <div
+          className="
+        w-full bg-cover bg-no-repeat h-96
+        align-middle justify-center
+        flex-col
+        flex items-center text-center"
+          style={{ backgroundImage: `url(${kyic_3})` }}
+        >
+          <h1 className="text-white text-5xl font-bold ">Contact Us</h1>
+        </div>
+      </div>
+
+    <div className="w-full max-w-lg mx-auto pt-10 pb-10 py-2 sm:py-10">
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <div className="mb-4">
+          <label className="block text-gray-700 font-bold mb-2" htmlFor="name">
+            Name <span className="text-red-500">*</span>
+          </label>
+          <div className="relative">
+            <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+              <HiUserCircle className="h-5 w-5 text-gray-400" />
+            </div>
+            <input
+              className={`${
+                errors.name ? "border-red-500" : ""
+              } appearance-none border rounded-lg w-full py-2 px-3 pl-10 text-gray-700 leading-tight focus:outline-none focus:border-blue-500`}
+              type="text"
+              placeholder="John Doe"
+              {...register("name", { required: true })}
+            />
+          </div>
+          {errors.name && (
+            <p className="text-red-500 text-xs mt-1">Name is required</p>
+          )}
+        </div>
+        <div className="mb-4">
+          <label className="block text-gray-700 font-bold mb-2" htmlFor="email">
+            Email <span className="text-red-500">*</span>
+          </label>
+          <div className="relative">
+            <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+              <HiMail className="h-5 w-5 text-gray-400" />
+            </div>
+            <input
+              className={`${
+                errors.email ? "border-red-500" : ""
+              } appearance-none border rounded-lg w-full py-2 px-3 pl-10 text-gray-700 leading-tight focus:outline-none focus:border-blue-500`}
+              type="email"
+              placeholder="johndoe@example.com"
+              {...register("email", {
+                required: true,
+                pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+              })}
+            />
+          </div>
+          {errors.email && (
+            <p className="text-red-500 text-xs mt-1">Invalid email address</p>
+          )}
+        </div>
+        <div className="mb-4">
+          <label className="block text-gray-700 font-bold mb-2" htmlFor="message">
+            Message <span className="text-red-500">*</span>
+          </label>
+          <div className="relative">
+            <div className="absolute inset-y-0 left-0 pl-3 pt-3 flex items-start pointer-events-none">
+              <HiOutlinePencilAlt className="h-5 w-5 text-gray-400" />
+            </div>
+            <textarea
+              className={`${errors.message ? "border-red-500" : ""} appearance-none border rounded-lg w-full py-2 px-3 pl-10 text-gray-700 leading-tight focus:outline-none focus:border-blue-500`}
+              placeholder="Write your message here"
+              rows="6"
+              {...register("message", { required: true })}
+            />
+          </div>
+          {errors.message && (
+            <p className="text-red-500 text-xs mt-1">Message is required</p>
+          )}
+        </div>
+        <div className="flex items-center justify-center">
+          <button
+            className={`${
+              loading ? "bg-blue-500 cursor-not-allowed" : "bg-blue-600 hover:bg-blue-500"
+            } text-white font-bold py-2 px-4 rounded-lg flex items-center focus:outline-none`}
+            type="submit"
+            disabled={loading}
+          >
+            {loading ? (
+              <>
+                <span className="mr-2">Loading</span>
+                <AiOutlineLoading className="animate-spin h-5 w-5 text-white" />
+              </>
+            ) : (
+              <>
+                <span>Submit</span>
+                <IoIosSend className="ml-2 h-5 w-5" />
+              </>
+            )}
+          </button>
+        </div>
+        <input type="hidden" value={loading} {...register("loading")} />
+      </form>
+    </div>
+    </>
+  );
 };
 
 export default ContactUs;
