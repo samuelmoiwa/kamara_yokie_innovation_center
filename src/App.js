@@ -7,9 +7,10 @@ import Home from './components/Home'
 import StudentPrograms from './components/StudentProgram'
 import Gallery from './components/Gallery';
 import Team from './components/Team';
-import Contact from './components/ContactUs';
+import ContactUs from './components/ContactUs';
 import AboutUs from './components/AboutUs';
 import Footer from './components/Footer'
+import Donate from './components/Donate';
 
 function App() {
   return (
@@ -20,8 +21,9 @@ function App() {
         <Route path='/studentPrograms' element={< StudentPrograms />} />
         <Route path='/gallery' element={< Gallery />} />
         <Route path='/team' element={< Team />} />
-        <Route path='/contact' element={< Contact />} />
+        <Route path='/contactUs' element={< ContactUs />} />
         <Route path='/aboutUs' element={< AboutUs />} />
+        <Route path='/donate' element={< Donate />} />
       </Routes>
       <Footer />
     </>
