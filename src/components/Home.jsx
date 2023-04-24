@@ -39,7 +39,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="">
+    <div className="sm:px-6">
       <section class="bg-blue-900 text-white">
         <div class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
           <div class="mx-auto max-w-3xl text-center">
@@ -88,7 +88,7 @@ export default function Home() {
               <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
                 STEM Education at KYIC
               </h3>
-              <p class="text-gray-600 mb-8">
+              <p class="text-gray-600 mb-8 text-justify">
                 The Kamara Yokie Innovation Centre (KYIC) is a free innovation
                 centre that is led by youth to promote science, technology,
                 engineering, and mathematics (STEM) education. Our centre is
@@ -117,7 +117,7 @@ export default function Home() {
             </div>
             <div class="w-full sm:w-1/2 p-6 ">
               <img class="w-full rounded shadow-md" src={kyic_2} alt="image" />
-              <p class="text-gray-600 mb-8">
+              <p class="text-gray-600 mb-8 text-justify">
                 Our mission is to create a vibrant ecosystem that fosters
                 creativity, innovation, and entrepreneurship. We believe that by
                 providing access to resources, mentorship, and education, we can
