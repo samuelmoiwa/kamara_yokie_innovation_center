@@ -9,7 +9,7 @@ import join_our_student_program from "../images/join_our_program.svg";
 
 export default function StudentPrograms() {
   return (
-    <div className="sm:px-6">
+    <div className="">
       <div className="bg-gray-100 w-full">
         <div
           className="
