@@ -1,6 +1,6 @@
 {
   "name": "kamara_yokie_innovation_center",
-  "homepage": "https://samuelmoiwa.github.io/",
+  "homepage": "https://samuelmoiwa.github.io/kamara_yokie_innovation_center",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,6 +15,7 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.43.9",
     "react-icons": "^4.8.0",
+    "react-lottie": "^1.2.3",
     "react-router-dom": "^6.9.0",
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
